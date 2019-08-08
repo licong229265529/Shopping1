@@ -39,6 +39,6 @@ public class DassifyFragment extends Fragment {
         mMyToolbar = (Toolbar) inflate.findViewById(R.id.myToolbar);
         mMyRec = (RecyclerView) inflate.findViewById(R.id.myRec);
         mMyRec.setLayoutManager(new LinearLayoutManager(getActivity()));
-        
+
     }
 }

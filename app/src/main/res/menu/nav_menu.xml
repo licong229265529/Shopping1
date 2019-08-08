@@ -23,6 +23,7 @@
         android:icon="@drawable/ic_navigation"
         android:title="发现"
         app:showAsAction="ifRoom"
+        android:id="@+id/navfa"
         android:enabled="true"
         />
     <item
