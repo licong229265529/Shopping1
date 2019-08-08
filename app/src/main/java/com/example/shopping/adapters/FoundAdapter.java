@@ -3,6 +3,7 @@ package com.example.shopping.adapters;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -25,7 +26,8 @@ public class FoundAdapter extends RecyclerView.Adapter<FoundAdapter.ViewHolder> 
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view = View.inflate(context, R.layout.found_item_layout, null);
-        return new ViewHolder(view);
+        View view1 = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.found_item_layout, viewGroup, false);
+        return new ViewHolder(view1);
     }
 
     @Override
