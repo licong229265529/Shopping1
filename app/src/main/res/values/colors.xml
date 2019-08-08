@@ -6,5 +6,6 @@
 
 
     <color name="bottom_nav_not_checked">#cccccc</color>
+    <color name="myfmbg">#DFDFDF</color>
 
 </resources>
