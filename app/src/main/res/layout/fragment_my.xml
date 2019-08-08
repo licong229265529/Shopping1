@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/myfmbg"
+    android:background="@color/result_minor_text"
     android:layout_height="match_parent"
     tools:context=".fragments.MyFragment">
 
@@ -44,7 +44,7 @@
                 android:id="@+id/allorder"
                 android:text="全部订单"
                 android:layout_centerVertical="true"
-                android:textColor="@color/bottom_nav_not_checked"
+                android:textColor="@color/colorAccent"
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="20dp"
                 android:layout_height="wrap_content" />
