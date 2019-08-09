@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.shopping.R;
-import com.example.shopping.CaptureActivity;
+//import com.example.shopping.CaptureActivity;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -62,9 +62,9 @@ public class HomekFragment extends Fragment {
     }
 
     private void goScan() {
-        Toast.makeText(getActivity(), "扫描二维码", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(getActivity(), CaptureActivity.class);
-        startActivityForResult(intent, REQUEST_CODE_SCAN);
+      /*  Toast.makeText(getActivity(), "扫描二维码", Toast.LENGTH_SHORT).show();
+      Intent intent = new Intent(getActivity(), CaptureActivity.class);
+        startActivityForResult(intent, REQUEST_CODE_SCAN);*/
     }
 
     @Override
@@ -91,6 +91,7 @@ public class HomekFragment extends Fragment {
                 String content = data.getStringExtra(DECODED_CONTENT_KEY);
                 //返回的BitMap图像
                 Bitmap bitmap = data.getParcelableExtra(DECODED_BITMAP_KEY);
+
 
                 Toast.makeText(getActivity(), "你扫描到的内容是："+content, Toast.LENGTH_SHORT).show();
             }
